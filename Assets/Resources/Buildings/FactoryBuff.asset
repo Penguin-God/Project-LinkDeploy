@@ -1,0 +1,46 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7afb96271eafc2c4dbae40fdffc285c8, type: 3}
+  m_Name: FactoryBuff
+  m_EditorClassIdentifier: Deploy::BuildingDataSO
+  buildingType: 3
+  buildingName: FactoryBuff
+  displayName: "\uACF5\uC7A5 \uAC00\uC18D\uAE30"
+  sprite: {fileID: 21300000, guid: abcfaa3b67754754b8d817bbce6169cb, type: 3}
+  color: {r: 1, g: 1, b: 1, a: 1}
+  description: "\uC8FC\uBCC0 \uACF5\uC7A5\uC758 \uC0DD\uC0B0 \uC18D\uB3C4\uB97C \uC62C\uB824\uC90C"
+  allowedZones: 01000000
+  attackDamage: 0
+  attackSpeed: 0
+  attackRange: 0
+  maxAmmo: 0
+  requiredAmmoType: 0
+  productionTime: 0
+  inputType1: 0
+  inputType2: 0
+  maxInputCapacity: 0
+  outputType: 0
+  maxOutputCapacity: 0
+  connectionRange: 1
+  buffAmount: 1
+  buffRange: 1
+  costType: 7
+  cost: 300
+  upgrades:
+  - level: 2
+    costType: 7
+    cost: 500
+    effectAmount: 0.1
+  - level: 3
+    costType: 7
+    cost: 700
+    effectAmount: 0.1

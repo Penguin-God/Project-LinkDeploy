@@ -1,0 +1,46 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7afb96271eafc2c4dbae40fdffc285c8, type: 3}
+  m_Name: ArrowFactory
+  m_EditorClassIdentifier: Deploy::BuildingDataSO
+  buildingType: 0
+  buildingName: ArrowFactory
+  displayName: "\uD654\uC0B4 \uACF5\uC7A5"
+  sprite: {fileID: 21300000, guid: 32b0de9455f84cb4eb043eed97e49877, type: 3}
+  color: {r: 1, g: 1, b: 1, a: 1}
+  description: "\uCCA0\uC744 \uD654\uC0B4\uB85C \uB9CC\uB4DC\uB294 \uACF5\uC7A5"
+  allowedZones: 01000000
+  attackDamage: 0
+  attackSpeed: 0
+  attackRange: 0
+  maxAmmo: 0
+  requiredAmmoType: 0
+  productionTime: 1
+  inputType1: 2
+  inputType2: 0
+  maxInputCapacity: 5
+  outputType: 4
+  maxOutputCapacity: 5
+  connectionRange: 1
+  buffAmount: 0
+  buffRange: 0
+  costType: 2
+  cost: 150
+  upgrades:
+  - level: 2
+    costType: 2
+    cost: 300
+    effectAmount: 0.1
+  - level: 3
+    costType: 2
+    cost: 700
+    effectAmount: 0.1

@@ -1,0 +1,76 @@
+﻿Type,레벨,Name,다음 레벨로 업그레이드 시 필요 재화,업그레이드 내용
+,,,,공장(개당 만드는 시간 감소)
+Factory,0.0,StoneFactory,나무 100,
+Factory,1.0,StoneFactory,나무 200,0.1s
+Factory,2.0,StoneFactory,나무 500,0.1s
+Factory,3.0,StoneFactory,,
+,,,,
+,,,,
+Factory,0.0,ArrowFactory,철 150,
+Factory,1.0,ArrowFactory,철 300,0.1s
+Factory,2.0,ArrowFactory,철 700,0.1s
+Factory,3.0,ArrowFactory,0,
+,,,,
+,,,,
+Factory,0.0,AmmoFactory,망치 400,
+Factory,1.0,AmmoFactory,망치 500,0.1s
+Factory,2.0,AmmoFactory,망치 1000,0.1s
+Factory,3.0,AmmoFactory,,
+,,,,
+,,,,
+,,,,슬로우 증가
+Factory,0.0,SlowEffect,골드 300,
+Factory,1.0,SlowEffect,골드 500,0.1
+Factory,2.0,SlowEffect,골드 700,0.1
+Factory,3.0,SlowEffect,,
+,,,,
+,,,,
+,,,,추가 대미지 증가
+Factory,0.0,DamageEffect,골드 400,
+Factory,1.0,DamageEffect,골드 700,10
+Factory,2.0,DamageEffect,골드 1000,10
+Factory,3.0,DamageEffect,,
+,,,,
+,,,,
+,,,,버프 %증가
+FactoryBuff,0.0,FactoryBuff,망치 300,
+FactoryBuff,1.0,FactoryBuff,망치 500,0.1
+FactoryBuff,2.0,FactoryBuff,망치 700,0.1
+FactoryBuff,3.0,FactoryBuff,,
+,,,,
+,,,,
+TowerBuff,0.0,TowerBuff,골드 400,
+TowerBuff,1.0,TowerBuff,골드 700,0.1
+TowerBuff,2.0,TowerBuff,골드 1000,0.1
+TowerBuff,3.0,TowerBuff,,
+,,,,
+,,,,
+,,,,대미지 증가
+Tower,0.0,Slingshot,나무 100,
+Tower,1.0,Slingshot,나무 150,20
+Tower,2.0,Slingshot,나무 250,30
+Tower,3.0,Slingshot,0,
+,,,,
+,,,,
+Tower,0.0,Archer,철 200,
+Tower,1.0,Archer,철 300,20
+Tower,2.0,Archer,철 500,30
+Tower,3.0,Archer,0,
+,,,,
+,,,,
+Tower,0.0,Gun,망치 600,20
+Tower,1.0,Gun,망치 900,20
+Tower,2.0,Gun,망치 1500,30
+Tower,3.0,Gun,0,
+,,,,
+,,,,레벨에 도달 시 건축 가능 건물
+Hall,1.0,,골드 2000,"돌 공장 X 2, 도로 X 10, 새총 X 2"
+Hall,2.0,,골드 3000,"냉기 제련소 X 3, 화력 제련소 X 3"
+Hall,3.0,,골드 5000,"궁수 X2, 화살공장 X 2, 도로 X 10"
+Hall,4.0,,골드 10000,"총알 공장 X 3, 도로 X 15, 총 X1"
+Hall,5.0,,,"공장 버프 X3, 타워버프 X2, 총 X3"
+,,,,
+Road,0.0,Road,골드 200,
+,,,,
+Mine,0.0,돌 채굴장,골드 100,
+Mine,0.0,쇠 채굴장,골드 200,

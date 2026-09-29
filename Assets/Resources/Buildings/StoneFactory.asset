@@ -1,0 +1,46 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7afb96271eafc2c4dbae40fdffc285c8, type: 3}
+  m_Name: StoneFactory
+  m_EditorClassIdentifier: Deploy::BuildingDataSO
+  buildingType: 0
+  buildingName: StoneFactory
+  displayName: "\uB3CC \uACF5\uC7A5"
+  sprite: {fileID: 21300000, guid: 188fe65b495d04c4ca50ba3911ee02bb, type: 3}
+  color: {r: 1, g: 1, b: 1, a: 1}
+  description: "\uB3CC\uC744 \uB3D9\uADF8\uB780\uB3CC\uB85C \uB9CC\uB4DC\uB294 \uACF5\uC7A5"
+  allowedZones: 01000000
+  attackDamage: 0
+  attackSpeed: 0
+  attackRange: 0
+  maxAmmo: 0
+  requiredAmmoType: 0
+  productionTime: 1
+  inputType1: 1
+  inputType2: 0
+  maxInputCapacity: 5
+  outputType: 3
+  maxOutputCapacity: 5
+  connectionRange: 1
+  buffAmount: 0
+  buffRange: 0
+  costType: 6
+  cost: 100
+  upgrades:
+  - level: 2
+    costType: 6
+    cost: 200
+    effectAmount: 0.1
+  - level: 3
+    costType: 6
+    cost: 500
+    effectAmount: 0.1

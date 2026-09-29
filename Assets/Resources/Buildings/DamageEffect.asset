@@ -1,0 +1,46 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7afb96271eafc2c4dbae40fdffc285c8, type: 3}
+  m_Name: DamageEffect
+  m_EditorClassIdentifier: Deploy::BuildingDataSO
+  buildingType: 8
+  buildingName: DamageEffect
+  displayName: "\uD654\uB825 \uC81C\uB828\uC18C"
+  sprite: {fileID: 0}
+  color: {r: 1, g: 1, b: 1, a: 1}
+  description: "\uD22C\uC0AC\uCCB4\uC5D0 \uACF5\uACA9\uB825 50 \uC99D\uAC00"
+  allowedZones: 01000000
+  attackDamage: 0
+  attackSpeed: 0
+  attackRange: 0
+  maxAmmo: 0
+  requiredAmmoType: 0
+  productionTime: 1
+  inputType1: 0
+  inputType2: 0
+  maxInputCapacity: 5
+  outputType: 0
+  maxOutputCapacity: 5
+  connectionRange: 1
+  buffAmount: 0
+  buffRange: 0
+  costType: 8
+  cost: 400
+  upgrades:
+  - level: 2
+    costType: 8
+    cost: 700
+    effectAmount: 10
+  - level: 3
+    costType: 8
+    cost: 1000
+    effectAmount: 10
