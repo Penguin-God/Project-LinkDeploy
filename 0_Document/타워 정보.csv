@@ -1,4 +1,4 @@
-﻿Type,Name,Korea,소환 가능 구역,Unnamed: 4,Unnamed: 5,Unnamed: 6,Unnamed: 7,Unnamed: 8,설명
+﻿Type,Name,Korea,소환 가능 구역,,,,,,설명
 Road,Road,도로,"마을, 방어구역",,,,,,건물 간 재료들의 연결 범위를 늘려줌
 ,,,,초당 재료 생산,결과물,결과물 최대 보유량,,,
 Mine,돌 채굴장,돌 채굴장,방어구역,5,돌,10,,,
