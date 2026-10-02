@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c30fe179c427e2544b92025cc8d59a62, type: 3}
   m_Name: LinkDeployCatalog
   m_EditorClassIdentifier: Assembly-CSharp::LinkDeployCatalog
-  startingGold: 2000
+  startingGold: 10000
   productionWidth: 15
   productionHeight: 8
   towerWidth: 3
