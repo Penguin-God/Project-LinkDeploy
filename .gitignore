@@ -645,3 +645,9 @@ crashlytics-build.properties
 # Additional files built by Visual Studio
 
 # End of https://www.toptal.com/developers/gitignore/api/unity,csharp,visualstudio
+
+# Link Deploy generated builds and local verification commands
+/Builds/
+/Artifacts/
+/Tools/editor-command.txt
+/.validation/

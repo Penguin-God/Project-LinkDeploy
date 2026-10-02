@@ -1,0 +1,396 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c30fe179c427e2544b92025cc8d59a62, type: 3}
+  m_Name: LinkDeployCatalog
+  m_EditorClassIdentifier: Assembly-CSharp::LinkDeployCatalog
+  startingGold: 2000
+  productionWidth: 15
+  productionHeight: 8
+  towerWidth: 3
+  towerHeight: 2
+  entranceColumns: 00000000070000000e000000
+  pathStart: -1
+  pathEnd: 15
+  pathHeight: -4
+  projectileSpeed: 22
+  slowDuration: 2
+  factoryBuffMultiplier: 1.25
+  towerBuffMultiplier: 1.2
+  buildings:
+  - id: Road
+    title: "\uB3C4\uB85C"
+    description: "\uC7AC\uB8CC\uB97C \uCD9C\uB825 \uBC29\uD5A5\uC758 \uB2E4\uC74C
+      \uCE78\uC73C\uB85C \uC804\uB2EC\uD569\uB2C8\uB2E4. \uC5B4\uB5A4 \uC7AC\uB8CC\uB4E0
+      \uD1B5\uACFC\uD558\uBA70, \uB9C9\uD788\uBA74 \uC55E \uCE78\uC5D0\uC11C \uAE30\uB2E4\uB9BD\uB2C8\uB2E4."
+    kind: 0
+    spriteIndex: 12
+    price: 200
+    limit: -1
+    unlockAfterStage: 0
+    output: 0
+    ammunition: 0
+    recipe: []
+    inputCapacity: 1
+    outputCapacity: 1
+    productionPerSecond: 1
+    range: 0
+    attacksPerSecond: 0
+    damage: 0
+    slow: 0
+    bonusDamage: 0
+    upgradePrices: 
+    damageIncreases: []
+  - id: StoneMine
+    title: "\uB3CC \uCC44\uAD74\uC7A5"
+    description: "\uB3CC\uC744 \uCD08\uB2F9 5\uAC1C \uCC44\uAD74\uD569\uB2C8\uB2E4.
+      \uB3CC \uACF5\uC7A5\uC73C\uB85C \uC5F0\uACB0\uD574 \uB3D9\uADF8\uB780 \uB3CC\uC744
+      \uB9CC\uB4DC\uC138\uC694."
+    kind: 1
+    spriteIndex: 0
+    price: 100
+    limit: 3
+    unlockAfterStage: 0
+    output: 1
+    ammunition: 0
+    recipe: []
+    inputCapacity: 5
+    outputCapacity: 10
+    productionPerSecond: 5
+    range: 0
+    attacksPerSecond: 0
+    damage: 0
+    slow: 0
+    bonusDamage: 0
+    upgradePrices: 
+    damageIncreases: []
+  - id: IronMine
+    title: "\uC1E0 \uCC44\uAD74\uC7A5"
+    description: "\uC1E0\uB97C \uCD08\uB2F9 5\uAC1C \uCC44\uAD74\uD569\uB2C8\uB2E4.
+      \uD654\uC0B4 \uACF5\uC7A5\uC5D0 \uC6D0\uB8CC\uB97C \uACF5\uAE09\uD569\uB2C8\uB2E4."
+    kind: 1
+    spriteIndex: 1
+    price: 200
+    limit: 3
+    unlockAfterStage: 0
+    output: 2
+    ammunition: 0
+    recipe: []
+    inputCapacity: 5
+    outputCapacity: 10
+    productionPerSecond: 5
+    range: 0
+    attacksPerSecond: 0
+    damage: 0
+    slow: 0
+    bonusDamage: 0
+    upgradePrices: 
+    damageIncreases: []
+  - id: StoneFactory
+    title: "\uB3CC \uACF5\uC7A5"
+    description: "\uB3CC 1\uAC1C\uB97C \uB3D9\uADF8\uB780 \uB3CC 1\uAC1C\uB85C \uAC00\uACF5\uD569\uB2C8\uB2E4.
+      \uC0C8\uCD1D\uC758 \uD0C4\uC57D\uC774\uC790 \uCD1D\uC54C\uC758 \uC7AC\uB8CC\uC785\uB2C8\uB2E4."
+    kind: 2
+    spriteIndex: 2
+    price: 200
+    limit: 4
+    unlockAfterStage: 0
+    output: 3
+    ammunition: 0
+    recipe:
+    - material: 1
+      quantity: 1
+    inputCapacity: 5
+    outputCapacity: 5
+    productionPerSecond: 1
+    range: 0
+    attacksPerSecond: 0
+    damage: 0
+    slow: 0
+    bonusDamage: 0
+    upgradePrices: c80000002c010000f4010000
+    damageIncreases: []
+  - id: ArrowFactory
+    title: "\uD654\uC0B4 \uACF5\uC7A5"
+    description: "\uC1E0 1\uAC1C\uB97C \uD654\uC0B4 1\uAC1C\uB85C \uAC00\uACF5\uD569\uB2C8\uB2E4.
+      \uAD81\uC218\uC5D0 \uBCF4\uAE09\uD558\uAC70\uB098 \uCD1D\uC54C \uACF5\uC7A5\uC73C\uB85C
+      \uBCF4\uB0C5\uB2C8\uB2E4."
+    kind: 2
+    spriteIndex: 3
+    price: 300
+    limit: 4
+    unlockAfterStage: 0
+    output: 4
+    ammunition: 0
+    recipe:
+    - material: 2
+      quantity: 1
+    inputCapacity: 5
+    outputCapacity: 5
+    productionPerSecond: 1
+    range: 0
+    attacksPerSecond: 0
+    damage: 0
+    slow: 0
+    bonusDamage: 0
+    upgradePrices: 2c0100009001000058020000
+    damageIncreases: []
+  - id: AmmoFactory
+    title: "\uCD1D\uC54C \uACF5\uC7A5"
+    description: "\uD654\uC0B4 1\uAC1C\uC640 \uB3D9\uADF8\uB780 \uB3CC 1\uAC1C\uB97C
+      \uCD1D\uC54C 1\uAC1C\uB85C \uC870\uD569\uD569\uB2C8\uB2E4. \uC7AC\uB8CC\uC758
+      \uAC15\uD654 \uD6A8\uACFC\uB294 \uC870\uD569 \uC2DC \uC0AC\uB77C\uC9D1\uB2C8\uB2E4."
+    kind: 2
+    spriteIndex: 4
+    price: 400
+    limit: 4
+    unlockAfterStage: 2
+    output: 5
+    ammunition: 0
+    recipe:
+    - material: 4
+      quantity: 1
+    - material: 3
+      quantity: 1
+    inputCapacity: 5
+    outputCapacity: 5
+    productionPerSecond: 1
+    range: 0
+    attacksPerSecond: 0
+    damage: 0
+    slow: 0
+    bonusDamage: 0
+    upgradePrices: 90010000f4010000e8030000
+    damageIncreases: []
+  - id: SlowEffect
+    title: "\uB0C9\uAE30 \uC81C\uB828\uC18C"
+    description: "\uC120\uD0DD\uD55C \uD22C\uC0AC\uCCB4\uC5D0 \uB454\uD654 50%\uB97C
+      \uCD94\uAC00\uD569\uB2C8\uB2E4. \uC5EC\uB7EC \uBC88 \uAC15\uD654\uD560 \uC218
+      \uC788\uC73C\uBA70 \uCD5C\uB300 \uB454\uD654\uB294 90%\uC785\uB2C8\uB2E4."
+    kind: 3
+    spriteIndex: 5
+    price: 300
+    limit: 4
+    unlockAfterStage: 1
+    output: 0
+    ammunition: 0
+    recipe: []
+    inputCapacity: 5
+    outputCapacity: 5
+    productionPerSecond: 1
+    range: 0
+    attacksPerSecond: 0
+    damage: 0
+    slow: 0.5
+    bonusDamage: 0
+    upgradePrices: 2c010000f4010000bc020000
+    damageIncreases: []
+  - id: DamageEffect
+    title: "\uD654\uB825 \uC81C\uB828\uC18C"
+    description: "\uC120\uD0DD\uD55C \uD22C\uC0AC\uCCB4\uC5D0 \uACF5\uACA9\uB825
+      50\uC744 \uCD94\uAC00\uD569\uB2C8\uB2E4. \uB2E4\uB978 \uC81C\uB828\uC18C\uC758
+      \uD6A8\uACFC\uC640 \uC911\uCCA9\uB429\uB2C8\uB2E4."
+    kind: 3
+    spriteIndex: 6
+    price: 400
+    limit: 4
+    unlockAfterStage: 1
+    output: 0
+    ammunition: 0
+    recipe: []
+    inputCapacity: 5
+    outputCapacity: 5
+    productionPerSecond: 1
+    range: 0
+    attacksPerSecond: 0
+    damage: 0
+    slow: 0
+    bonusDamage: 50
+    upgradePrices: 90010000bc020000e8030000
+    damageIncreases: []
+  - id: FactoryBuff
+    title: "\uACF5\uC7A5 \uAC00\uC18D\uC18C"
+    description: "\uC0C1\uD558\uC88C\uC6B0\uC5D0 \uC778\uC811\uD55C \uCC44\uAD74\uC7A5\xB7\uACF5\uC7A5\xB7\uC81C\uB828\uC18C\uC758
+      \uC0DD\uC0B0 \uC18D\uB3C4\uB97C 25% \uB192\uC785\uB2C8\uB2E4."
+    kind: 5
+    spriteIndex: 7
+    price: 400
+    limit: 2
+    unlockAfterStage: 3
+    output: 0
+    ammunition: 0
+    recipe: []
+    inputCapacity: 5
+    outputCapacity: 5
+    productionPerSecond: 1
+    range: 0
+    attacksPerSecond: 0
+    damage: 0
+    slow: 0
+    bonusDamage: 0
+    upgradePrices: 
+    damageIncreases: []
+  - id: Slingshot
+    title: "\uC0C8\uCD1D"
+    description: "\uB3D9\uADF8\uB780 \uB3CC\uC744 \uC0AC\uC6A9\uD558\uB294 \uD0C0\uC6CC.
+      \uAC00\uC7A5 \uAC00\uAE4C\uC6B4 \uC801\uC744 \uC870\uC900\uD558\uACE0 \uBC94\uC704\uB97C
+      \uBC97\uC5B4\uB098\uAE30 \uC804\uAE4C\uC9C0 \uCD94\uC801\uD569\uB2C8\uB2E4."
+    kind: 4
+    spriteIndex: 8
+    price: 100
+    limit: 6
+    unlockAfterStage: 0
+    output: 0
+    ammunition: 3
+    recipe: []
+    inputCapacity: 3
+    outputCapacity: 5
+    productionPerSecond: 1
+    range: 6
+    attacksPerSecond: 0.7
+    damage: 50
+    slow: 0
+    bonusDamage: 0
+    upgradePrices: 6400000096000000fa000000
+    damageIncreases:
+    - 20
+    - 30
+    - 30
+  - id: Archer
+    title: "\uAD81\uC218"
+    description: "\uD654\uC0B4\uC744 \uC0AC\uC6A9\uD558\uB294 \uD0C0\uC6CC. \uAE34
+      \uC0AC\uAC70\uB9AC\uC640 \uBE60\uB978 \uC5F0\uC0AC\uB85C \uC801\uC744 \uBC29\uC5B4\uD569\uB2C8\uB2E4."
+    kind: 4
+    spriteIndex: 9
+    price: 200
+    limit: 6
+    unlockAfterStage: 0
+    output: 0
+    ammunition: 4
+    recipe: []
+    inputCapacity: 5
+    outputCapacity: 5
+    productionPerSecond: 1
+    range: 10
+    attacksPerSecond: 1.2
+    damage: 35
+    slow: 0
+    bonusDamage: 0
+    upgradePrices: c80000002c010000f4010000
+    damageIncreases:
+    - 20
+    - 30
+    - 30
+  - id: Gun
+    title: "\uCD1D"
+    description: "\uCD1D\uC54C\uC744 \uC0AC\uC6A9\uD558\uB294 \uD0C0\uC6CC. \uAC15\uB825\uD55C
+      \uD654\uB825\uC744 \uC720\uC9C0\uD558\uB824\uBA74 \uB450 \uC885\uB958\uC758
+      \uC6D0\uB8CC \uACF5\uAE09\uC774 \uD544\uC694\uD569\uB2C8\uB2E4."
+    kind: 4
+    spriteIndex: 10
+    price: 600
+    limit: 6
+    unlockAfterStage: 2
+    output: 0
+    ammunition: 5
+    recipe: []
+    inputCapacity: 10
+    outputCapacity: 5
+    productionPerSecond: 1
+    range: 15
+    attacksPerSecond: 2
+    damage: 50
+    slow: 0
+    bonusDamage: 0
+    upgradePrices: 5802000084030000dc050000
+    damageIncreases:
+    - 20
+    - 30
+    - 30
+  - id: TowerBuff
+    title: "\uD0C0\uC6CC \uC99D\uD3ED\uAE30"
+    description: "\uAC19\uC740 \uD0C0\uC6CC \uAD6C\uC5ED\uC758 \uACF5\uACA9 \uC18D\uB3C4\uB97C
+      20% \uB192\uC785\uB2C8\uB2E4. \uC99D\uD3ED\uAE30\uB294 \uD55C \uAD6C\uC5ED\uC5D0\uC11C
+      \uD55C \uBC88\uB9CC \uC801\uC6A9\uB429\uB2C8\uB2E4."
+    kind: 6
+    spriteIndex: 11
+    price: 350
+    limit: 3
+    unlockAfterStage: 3
+    output: 0
+    ammunition: 0
+    recipe: []
+    inputCapacity: 5
+    outputCapacity: 5
+    productionPerSecond: 1
+    range: 0
+    attacksPerSecond: 0
+    damage: 0
+    slow: 0
+    bonusDamage: 0
+    upgradePrices: 
+    damageIncreases: []
+  stages:
+  - title: "\uC232\uC758 \uC785\uAD6C"
+    monsterHealth: 120
+    spawnDelay: 2
+    speed: 1
+    monsterCount: 3
+    clearGold: 200
+    unlockBuildings:
+    - SlowEffect
+    - DamageEffect
+  - title: "\uC815\uCC30\uB300"
+    monsterHealth: 150
+    spawnDelay: 1
+    speed: 2
+    monsterCount: 5
+    clearGold: 300
+    unlockBuildings:
+    - AmmoFactory
+    - Gun
+  - title: "\uB3CC\uACA9"
+    monsterHealth: 200
+    spawnDelay: 1
+    speed: 4
+    monsterCount: 7
+    clearGold: 500
+    unlockBuildings:
+    - FactoryBuff
+    - TowerBuff
+  - title: "\uBD89\uC740 \uD589\uB82C"
+    monsterHealth: 330
+    spawnDelay: 0.7
+    speed: 5
+    monsterCount: 7
+    clearGold: 700
+    unlockBuildings: []
+  - title: "\uCCA0\uAC11 \uBD80\uB300"
+    monsterHealth: 500
+    spawnDelay: 0.7
+    speed: 5
+    monsterCount: 8
+    clearGold: 1000
+    unlockBuildings: []
+  - title: "\uBD88\uD0C0\uB294 \uC232"
+    monsterHealth: 800
+    spawnDelay: 0.7
+    speed: 5
+    monsterCount: 9
+    clearGold: 1500
+    unlockBuildings: []
+  - title: "\uB9C8\uC9C0\uB9C9 \uC694\uC0C8"
+    monsterHealth: 1000
+    spawnDelay: 0.7
+    speed: 5
+    monsterCount: 10
+    clearGold: 0
+    unlockBuildings: []
