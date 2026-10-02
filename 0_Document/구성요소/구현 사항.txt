@@ -1,3 +1,3 @@
 Unity6, C# 9.0
 2D 탑뷰
-Resources폴더에 있는 이미지 이름에 맞게 할당
+이미지는 Resources폴더에 생성. 이름으로 사용
